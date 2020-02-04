@@ -1,0 +1,12 @@
+Toda estrutura começa com 
+SET SERVEROUTPUT ON
+DECLARE xxxxx number(3) not null := 0;  -- or DECLARE xxxxx varchar(45);
+BEGIN -- inicia a estrutura do codigo
+  DBMS_OUTPUT.PUT_LINE(idade);
+  idade :=  26 / 1.5 ;
+  if idade < 18 then -- if inicia a estrutura logica 
+  DBMS_OUTPUT.PUT_LINE('menor de idade'|| idade);
+  else 
+  DBMS_OUTPUT.PUT_LINE('maior de idade' || idade);
+  end if; -- encerra a estrutura logica
+END; -- encerra a estrutura do codigo
